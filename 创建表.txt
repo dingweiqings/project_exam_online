@@ -1,0 +1,203 @@
+Create table Class_tb
+(Class_ID int PRIMARY KEY,
+ Class_name varchar(20) NOT NULL);
+insert into Class_tb (Class_ID,Class_name) values(1,'信计1班');
+insert into Class_tb (Class_ID,Class_name) values(2,'信计2班');
+insert into Class_tb (Class_ID,Class_name)  values(3,'计算机1班');
+insert into Class_tb (Class_ID,Class_name)  values(4,'计算机2班');
+insert into Class_tb (Class_ID,Class_name)  values(5,'软件工程1班');
+insert into Class_tb (Class_ID,Class_name)  values(6,'软件工程2班');
+insert into Class_tb (Class_ID,Class_name)  values(7,'数学与应用数学1班');
+insert into Class_tb (Class_ID,Class_name)  values(8,'数学与应用数学2班');
+insert into Class_tb (Class_ID,Class_name) values(9,'物流管理1班');
+insert into Class_tb (Class_ID,Class_name)  values(10,'物流管理2班');
+insert into Class_tb (Class_ID,Class_name) values(11,'翻译1班');
+insert into Class_tb (Class_ID,Class_name)  values(12,'翻译2班');
+insert into Class_tb (Class_ID,Class_name)  values(13,'英语1班');
+insert into Class_tb (Class_ID,Class_name) values(14,'英语2班');
+insert into Class_tb (Class_ID,Class_name) values(15,'中文1班');
+insert into Class_tb (Class_ID,Class_name)  values(16,'中文2班');
+
+Create table Man_tb
+(Man_ID int PRIMARY KEY,
+ Man_name varchar(20) NOT NULL,
+ Man_psd varchar(20) NOT NULL 
+);
+
+insert Man_tb(Man_ID,Man_name,Man_psd) values (1,'gao','123');
+insert Man_tb(Man_ID,Man_name,Man_psd) values (2,'ding','123');
+insert Man_tb(Man_ID,Man_name,Man_psd) values (3,'zhen','123');
+insert Man_tb(Man_ID,Man_name,Man_psd) values (4,'admin','123');
+Create table Tea_tb
+(Tea_ID int PRIMARY KEY, 
+ Tea_name varchar(20) NOT NULL,
+ Tea_psd varchar(20) NOT NULL
+);
+
+
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(1,'陈雪松','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(2,'姚有胜','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(3,'付求宝','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(4,'李杏','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd)values(5,'徐丹青','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(6,'程琳','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd)values(7,'庄所法','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(8,'赵琳','123456');
+
+Create table Cou_tb
+(Cou_ID int PRIMARY KEY,
+ Cou_name varchar(20) NOT NULL);
+
+insert into Cou_tb (Cou_ID,Cou_name) values(1,'教育技术学导论');
+insert into Cou_tb (Cou_ID,Cou_name)  values(2,'教育技术研究方法');
+insert into Cou_tb (Cou_ID,Cou_name) values(3,'C语言程序设计');
+insert into Cou_tb (Cou_ID,Cou_name) values(4,'数据结构（C语言版）');
+insert into Cou_tb (Cou_ID,Cou_name) values(5,'教育信息处理');
+insert into Cou_tb (Cou_ID,Cou_name) values(6,'大学计算机基础');
+insert into Cou_tb (Cou_ID,Cou_name) values(7,'多媒体画面艺术基础');
+insert into Cou_tb (Cou_ID,Cou_name)values(8,'多媒体教学软件设计与制作');
+insert into Cou_tb (Cou_ID,Cou_name) values(9,'教育传播学');
+insert into Cou_tb (Cou_ID,Cou_name)values(10,'远程教育学');
+insert into Cou_tb (Cou_ID,Cou_name) values(11,'网络组网技术');
+insert into Cou_tb (Cou_ID,Cou_name) values(12,'网络课程设计');
+insert into Cou_tb (Cou_ID,Cou_name)values(13,'网络教育应用');
+insert into Cou_tb (Cou_ID,Cou_name)values(14,'电视教材编辑与制作');
+insert into Cou_tb (Cou_ID,Cou_name) values(15,'网站建设与开发');
+insert into Cou_tb (Cou_ID,Cou_name) values(16,'信息技术教学法');
+insert into Cou_tb (Cou_ID,Cou_name) values(17,'信息技术教学艺术');
+insert into Cou_tb (Cou_ID,Cou_name) values(18,'信息技术与课程整合');
+insert into Cou_tb (Cou_ID,Cou_name)values(19,'信息加工学习理论');
+
+
+Create table Stu_tb
+(Stu_ID int PRIMARY KEY,
+ Stu_num varchar(20) NOT NULL,
+ Stu_name varchar(20) NOT NULL,
+ Stu_psd varchar(20) NOT NULL, 
+ stu_class int,
+ FOREIGN KEY (Stu_class) REFERENCES Class_tb(Class_ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(1,'071202001','陈莉莉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(2,'071202002','陈忠华','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(3,'071202003','方源刚','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(4,'071202004','傅娟娟','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(5,'071202005','傅龙','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(6,'071202006','高成珍','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(7,'071202007','洪志强','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(8,'071202008','胡海鹰','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(9,'071202009','黄雄','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(10,'071202010','黄燕珍','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(11,'071202011','康文婷','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(12,'071202012','寇晓莉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(13,'071202013','赖昌燊','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(14,'071202014','赖泽洲','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(15,'071202015','李丽琴','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(16,'071202016','练垂云','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(17,'071202017','龙祯平','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(18,'071202018','罗丽','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(19,'071202019','欧阳佳','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(20,'071202020','潘文玉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(21,'071202021','彭丽丽','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(22,'071202022','孙少飞','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(23,'071202023','孙伟征','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(24,'071202024','王安琪','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(25,'071202025','王满','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(26,'071202026','魏茂林','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(27,'071202027','吴少蓉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(28,'071202028','吴建林','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(29,'071202029','吴竞','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(30,'071202030','吴伟','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(31,'071202031','吴勇辉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(32,'071202032','吴有龙','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(33,'071202033','谢慧明','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(34,'071202034','谢倚倩','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(35,'071202035','徐垚','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(36,'071202036','宴皓鸾','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(37,'071202037','杨涛','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(38,'071202038','杨星','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(39,'071202039','杨燕平','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(40,'071202040','杨月美','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(41,'071202041','俞显','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(42,'071202042','俞摇','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(43,'071202043','张晨婧仔','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(44,'071202044','张万平','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(45,'071202045','张文昕','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(46,'071202046','张晓建','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(47,'071202047','赵青','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(48,'071202048','周春梅','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(49,'071202049','周兰','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(50,'071202050','周芸','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(51,'071202051','朱景为','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(52,'071202052','祝琳','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(53,'071202053','邹华','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(54,'071202054','邹慧兰','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(55,'071202055','肖京','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(56,'071202056','刘晓龙','123456',2);
+
+
+
+Create table Tea_Cou_Class_tb
+(
+ Tea_ID int NOT NULL,
+ Cou_ID int NOT NULL,
+ Class_ID int NOT NULL,
+ PRIMARY KEY(Tea_ID,Cou_ID,Class_ID), 
+ FOREIGN KEY (Tea_ID) REFERENCES Tea_tb(Tea_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Cou_ID) REFERENCES Cou_tb(Cou_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Class_ID) REFERENCES Class_tb(Class_ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+insert Tea_Cou_Class_tb (Tea_ID,Cou_ID,Class_ID) values(6,4,2);
+
+
+
+
+Create table Score_tb
+(
+ Score_ID int NOT NULL,
+ Stu_ID int NOT NULL,
+ Class_ID int NOT NULL,
+ Tea_ID int NOT NULL, 
+ Cou_ID int NOT NULL,
+ Score_score int, 
+ PRIMARY KEY(Score_ID), 
+ FOREIGN KEY (Tea_ID) REFERENCES Tea_tb(Tea_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Cou_ID) REFERENCES Cou_tb(Cou_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Class_ID) REFERENCES Class_tb(Class_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Stu_ID) REFERENCES Stu_tb(Stu_ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(1,1,2,2,2,90);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(2,3,2,2,2,88);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(3,4,2,2,2,86);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(4,5,2,2,2,90);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(5,6,2,2,2,78);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(6,10,2,2,2,76);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score)values(7,11,2,2,2,86);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(8,13,2,2,2,88);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(9,14,2,2,2,80);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score)values(10,15,2,2,2,78);
+
+Create table Title_tb
+(
+ Title_ID int NOT NULL,
+ Title_name varchar(200),-- 题干
+ Title_opt_a varchar(100),-- 选项A
+ Title_opt_b varchar(100),-- 选项B
+ Title_opt_c varchar(100),-- 选项C
+ Title_opt_d varchar(100),-- 选项D
+ Title_answer varchar(2),-- 正确答案
+ Title_score int,-- 分数
+ Cou_ID int NOT NULL,
+ Tea_ID int NOT NULL,
+ PRIMARY KEY(Title_ID), 
+ FOREIGN KEY (Tea_ID) REFERENCES Tea_tb(Tea_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Cou_ID) REFERENCES Cou_tb(Cou_ID) ON DELETE CASCADE ON UPDATE CASCADE
+ );
+
+-- 插入题库数据
+insert into  Title_tb  values(1,'栈和队列的共同特点是','A.只允许在端点处插入和删除元素','B.都是先进后出','C.都是先进先出','D.没有共同点','A',2,1,1);
+insert into  Title_tb  values(2,'2. 用链接方式存储的队列，在进行插入运算时.','A.仅修改头指针','B. 头、尾指针都要修改',' C. 仅修改尾指针 ','D.头、尾指针可能都要修改','D',4,1,1);
+insert into  Title_tb  values(3,'3. 以下数据结构中哪一个是非线性结构？','A. 队列',' B. 栈  ','C. 线性表',' D. 二叉树 ','D',8,1,1);

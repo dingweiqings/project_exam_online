@@ -1,0 +1,28 @@
+
+Create table Score_tb
+(
+ Score_ID int NOT NULL,
+ Stu_ID int NOT NULL,
+ Class_ID int NOT NULL,
+ Tea_ID int NOT NULL, 
+ Cou_ID int NOT NULL,
+ Score_score int, 
+ PRIMARY KEY(Score_ID), 
+ FOREIGN KEY (Tea_ID) REFERENCES Tea_tb(Tea_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Cou_ID) REFERENCES Cou_tb(Cou_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Class_ID) REFERENCES Class_tb(Class_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Stu_ID) REFERENCES Stu_tb(Stu_ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(1,1,2,2,2,90);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(2,3,2,2,2,88);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(3,4,2,2,2,86);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(4,5,2,2,2,90);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(5,6,2,2,2,78);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(6,10,2,2,2,76);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score)values(7,11,2,2,2,86);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(8,13,2,2,2,88);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score) values(9,14,2,2,2,80);
+insert into Score_tb (Score_ID,Stu_ID,Class_ID,Tea_ID,Cou_ID,Score_score)values(10,15,2,2,2,78);
+

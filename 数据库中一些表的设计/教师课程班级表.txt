@@ -1,0 +1,12 @@
+Create table Tea_Cou_Class_tb
+(
+ Tea_ID int NOT NULL,
+ Cou_ID int NOT NULL,
+ Class_ID int NOT NULL,
+ PRIMARY KEY(Tea_ID,Cou_ID,Class_ID), 
+ FOREIGN KEY (Tea_ID) REFERENCES Tea_tb(Tea_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Cou_ID) REFERENCES Cou_tb(Cou_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Class_ID) REFERENCES Class_tb(Class_ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+insert Tea_Cou_Class_tb (Tea_ID,Cou_ID,Class_ID) values(6,4,2);

@@ -1,0 +1,15 @@
+Create table Tea_tb
+(Tea_ID int PRIMARY KEY, 
+ Tea_name varchar(20) NOT NULL,
+ Tea_psd varchar(20) NOT NULL
+);
+
+
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(1,'陈雪松','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(2,'姚有胜','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(3,'付求宝','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(4,'李杏','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd)values(5,'徐丹青','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(6,'程琳','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd)values(7,'庄所法','123456');
+insert into Tea_tb(Tea_ID,Tea_name,Tea_psd) values(8,'赵琳','123456');

@@ -1,0 +1,16 @@
+Create table Title_tb
+(
+ Title_ID int NOT NULL,
+ Title_name varchar(200),-- 题干
+ Title_opt_a varchar(100),-- 选项A
+ Title_opt_b varchar(100),-- 选项B
+ Title_opt_c varchar(100),-- 选项C
+ Title_opt_d varchar(100),-- 选项D
+ Title_answer varchar(2),-- 正确答案
+ Title_score int,-- 分数
+ Cou_ID int NOT NULL,
+ Tea_ID int NOT NULL,
+ PRIMARY KEY(Title_ID), 
+ FOREIGN KEY (Tea_ID) REFERENCES Tea_tb(Tea_ID) ON DELETE CASCADE ON UPDATE CASCADE,
+ FOREIGN KEY (Cou_ID) REFERENCES Cou_tb(Cou_ID) ON DELETE CASCADE ON UPDATE CASCADE
+ );

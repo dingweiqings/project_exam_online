@@ -1,0 +1,23 @@
+Create table Cou_tb
+(Cou_ID int PRIMARY KEY,
+ Cou_name varchar(20) NOT NULL);
+
+insert into Cou_tb (Cou_ID,Cou_name) values(1,'教育技术学导论');
+insert into Cou_tb (Cou_ID,Cou_name)  values(2,'教育技术研究方法');
+insert into Cou_tb (Cou_ID,Cou_name) values(3,'C语言程序设计');;
+insert into Cou_tb (Cou_ID,Cou_name) values(4,'数据结构（C语言版）');
+insert into Cou_tb (Cou_ID,Cou_name) values(5,'教育信息处理');
+insert into Cou_tb (Cou_ID,Cou_name) values(6,'大学计算机基础');
+insert into Cou_tb (Cou_ID,Cou_name) values(7,'多媒体画面艺术基础');
+insert into Cou_tb (Cou_ID,Cou_name)values(8,'多媒体教学软件设计与制作');
+insert into Cou_tb (Cou_ID,Cou_name) values(9,'教育传播学');
+insert into Cou_tb (Cou_ID,Cou_name)values(10,'远程教育学');
+insert into Cou_tb (Cou_ID,Cou_name) values(11,'网络组网技术');
+insert into Cou_tb (Cou_ID,Cou_name) values(12,'网络课程设计');
+insert into Cou_tb (Cou_ID,Cou_name)values(13,'网络教育应用');
+insert into Cou_tb (Cou_ID,Cou_name)values(14,'电视教材编辑与制作');
+insert into Cou_tb (Cou_ID,Cou_name) values(15,'网站建设与开发');
+insert into Cou_tb (Cou_ID,Cou_name) values(16,'信息技术教学法');
+insert into Cou_tb (Cou_ID,Cou_name) values(17,'信息技术教学艺术');
+insert into Cou_tb (Cou_ID,Cou_name) values(18,'信息技术与课程整合');
+insert into Cou_tb (Cou_ID,Cou_name)values(19,'信息加工学习理论');

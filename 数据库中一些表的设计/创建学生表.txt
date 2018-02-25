@@ -1,0 +1,65 @@
+Create table Stu_tb
+(Stu_ID int PRIMARY KEY,
+ Stu_num varchar(20) NOT NULL,
+ Stu_name varchar(20) NOT NULL,
+ Stu_psd varchar(20) NOT NULL, 
+ stu_class int,
+ FOREIGN KEY (Stu_class) REFERENCES Class_tb(Class_ID) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(1,'071202001','陈莉莉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(2,'071202002','陈忠华','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(3,'071202003','方源刚','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(4,'071202004','傅娟娟','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(5,'071202005','傅龙','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(6,'071202006','高成珍','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(7,'071202007','洪志强','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(8,'071202008','胡海鹰','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(9,'071202009','黄雄','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(10,'071202010','黄燕珍','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(11,'071202011','康文婷','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(12,'071202012','寇晓莉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(13,'071202013','赖昌燊','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(14,'071202014','赖泽洲','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(15,'071202015','李丽琴','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(16,'071202016','练垂云','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(17,'071202017','龙祯平','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(18,'071202018','罗丽','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(19,'071202019','欧阳佳','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(20,'071202020','潘文玉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(21,'071202021','彭丽丽','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(22,'071202022','孙少飞','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(23,'071202023','孙伟征','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(24,'071202024','王安琪','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(25,'071202025','王满','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(26,'071202026','魏茂林','123456',2);
+insert into Stu_tb ((Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(27,'071202027','吴少蓉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(28,'071202028','吴建林','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(29,'071202029','吴竞','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(30,'071202030','吴伟','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(31,'071202031','吴勇辉','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(32,'071202032','吴有龙','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(33,'071202033','谢慧明','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(34,'071202034','谢倚倩','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(35,'071202035','徐垚','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(36,'071202036','宴皓鸾','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(37,'071202037','杨涛','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(38,'071202038','杨星','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(39,'071202039','杨燕平','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(40,'071202040','杨月美','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(41,'071202041','俞显','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(42,'071202042','俞摇','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(43,'071202043','张晨婧仔','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(44,'071202044','张万平','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(45,'071202045','张文昕','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(46,'071202046','张晓建','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(47,'071202047','赵青','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(48,'071202048','周春梅','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(49,'071202049','周兰','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(50,'071202050','周芸','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(51,'071202051','朱景为','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(52,'071202052','祝琳','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(53,'071202053','邹华','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(54,'071202054','邹慧兰','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class)values(55,'071202055','肖京','123456',2);
+insert into Stu_tb (Stu_ID,Stu_num,Stu_name,Stu_psd,stu_class) values(56,'071202056','刘晓龙','123456',2);

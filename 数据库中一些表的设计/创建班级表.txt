@@ -1,0 +1,19 @@
+Create table Class_tb
+(Class_ID int PRIMARY KEY,
+ Class_name varchar(20) NOT NULL);
+insert into Class_tb (Class_ID,Class_name) values(1,'信计1班');
+insert into Class_tb (Class_ID,Class_name) values(2,'信计2班');
+insert into Class_tb (Class_ID,Class_name)  values(3,'计算机1班');
+insert into Class_tb (Class_ID,Class_name)  values(4,'计算机2班');
+insert into Class_tb (Class_ID,Class_name)  values(5,'软件工程1班');
+insert into Class_tb (Class_ID,Class_name)  values(6,'软件工程2班');
+insert into Class_tb (Class_ID,Class_name)  values(7,'数学与应用数学1班');
+insert into Class_tb (Class_ID,Class_name)  values(8,'数学与应用数学2班');
+insert into Class_tb (Class_ID,Class_name) values(9,'物流管理1班');
+insert into Class_tb (Class_ID,Class_name)  values(10,'物流管理2班');
+insert into Class_tb (Class_ID,Class_name) values(11,'翻译1班');
+insert into Class_tb (Class_ID,Class_name)  values(12,'翻译2班');
+insert into Class_tb (Class_ID,Class_name)  values(13,'英语1班');
+insert into Class_tb (Class_ID,Class_name) values(14,'英语2班');
+insert into Class_tb (Class_ID,Class_name) values(15,'中文1班');
+insert into Class_tb (Class_ID,Class_name)  values(16,'中文2班');

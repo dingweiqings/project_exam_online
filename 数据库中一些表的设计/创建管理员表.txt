@@ -1,0 +1,10 @@
+Create table Man_tb
+(Man_ID int PRIMARY KEY,
+ Man_name varchar(20) NOT NULL,
+ Man_psd varchar(20) NOT NULL 
+);
+
+insert Man_tb(Man_name,Man_psd) values ('gao','123');
+insert Man_tb(Man_name,Man_psd) values ('cheng','123');
+insert Man_tb(Man_name,Man_psd) values ('zhen','123');
+insert Man_tb(Man_name,Man_psd) values ('admin','123');
